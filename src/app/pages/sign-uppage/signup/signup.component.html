@@ -2,33 +2,52 @@
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-6 offset-md-3">
+                <img src="../../../../assets/dogslogoss.jpg" alt="Shop logo">
                 <mat-card>
-                    <div class="container">
-                <form action="">
-                    
-                    <p>
-                        <mat-form-field class="full-width" appearance="fill">
+                    <mat-card-title>
+                        Sign up
+                    </mat-card-title>
+                    <div class="container text-center">
 
-                            <mat-label>Enter your name</mat-label>
-                            <input matInput placeholder="Enter your name">
-                           
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>
-                    </p>
-                    <p>
-                        <mat-form-field class="full-width" appearance="outline">
-                            <mat-label>Enter your password</mat-label>
-                            <input matInput placeholder="Enter your password">
-                            <mat-hint>Hint</mat-hint>
-                          </mat-form-field>
-    
-                    </p>
-                     
-                  
-                </form>
-            </div>
-            </mat-card>
-                    
+                        <form [formGroup]="signupform" (ngSubmit)="onSubmit()">
+
+                            <p>
+                                <mat-form-field class="full-width text-center" appearance="fill">
+
+                                    <mat-label>Enter your name</mat-label>
+                                    <input matInput placeholder="Enter your name" formControlName="name">
+
+                                    <mat-hint>Name</mat-hint>
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-form-field class="full-width text-center mt10" appearance="fill">
+                                    <mat-label>Enter your password</mat-label>
+                                    <input matInput placeholder="Enter your password" formControlName="password">
+                                    <mat-hint>Password</mat-hint>
+
+                                </mat-form-field>
+
+                            </p>
+                            <p>
+                                <mat-form-field class="full-width text-center mt10" appearance="fill">
+                                    <mat-label>Enter your address</mat-label>
+                                    <input matInput placeholder="Enter your address" formControlName="address">
+                                    <mat-hint>Address</mat-hint>
+                                </mat-form-field>
+                             
+
+                            </p>
+                            <button class="button" type="submit" (click)="st=!st" [routerLink]="''"> Register</button>
+                            
+
+
+                        </form>
+                       
+                    </div>
+                </mat-card>
+                
+
             </div>
             <div class="col-md-9">
                 <router-outlet></router-outlet>
