@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { SignupserviceService } from 'src/app/signupservice.service';
 
 
 @Component({
@@ -9,8 +10,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class SignupComponent implements OnInit {
   signupform:any=FormGroup;
-  st= true;
-  constructor(private formbuilder: FormBuilder){}
+  st= this.service.getSt();
+  constructor(private formbuilder: FormBuilder, private service:SignupserviceService){}
   ngOnInit(): void {
     this.signupform= this.formbuilder.group({
       name:[null,[Validators.required]],
@@ -19,7 +20,7 @@ export class SignupComponent implements OnInit {
     });
   }
   onSubmit(){
-
+    this.service.setSt(true);
     console.log("This is done")
   }
 

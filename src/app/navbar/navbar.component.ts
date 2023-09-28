@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { SignupserviceService } from '../signupservice.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  // shareddata=this.signupservice.getSt();
+  constructor(){}
+  // changedata(){
+  //   this.signupservice.setSt(this.shareddata);
+    
+  // }
 }
+

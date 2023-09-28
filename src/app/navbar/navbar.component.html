@@ -1,19 +1,27 @@
-<mat-toolbar color = "primary">
-    
-    <a [routerLink]="''" style="text-decoration: none; color: white;">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>pets
-      
-        </mat-icon>
-      </button>
-      <span >Pet Store</span></a>
-     
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon ml20 mr20 small-button " aria-label="Example icon-button with heart icon">
-      Login
+<mat-toolbar color="primary">
+
+  <a [routerLink]="''" style="text-decoration: none; color: white;">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>pets
+
+      </mat-icon>
     </button>
-    <button mat-icon-button class="example-icon ml20 mr30 small-button" aria-label="Example icon-button with share icon" [routerLink]="'/signup'">
-      Signup
-    </button>
-  </mat-toolbar>
+    <span>Pet Store</span>
+  </a>
+
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon ml20 mr20 small-button "
+    aria-label="Example icon-button with heart icon">
+    Login
+  </button>
+  <button mat-icon-button class="example-icon ml20 mr30 small-button"  aria-label="Example icon-button with share icon"
+    [routerLink]="'/signup'">
+    Signup
+  </button>
+  <button mat-icon-button class="example-icon ml20 mr30 small-button"  aria-label="Example icon-button with share icon"
+    [routerLink]="'/cart'">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
   
+
+</mat-toolbar>

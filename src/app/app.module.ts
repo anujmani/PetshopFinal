@@ -14,6 +14,8 @@ import {MatCardModule} from '@angular/material/card';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { ShoppageComponent } from './pages/shoppage/shoppage.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     SignupComponent,
     NavbarComponent,
-    HomePageComponent
+    HomePageComponent,
+    ShoppageComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
