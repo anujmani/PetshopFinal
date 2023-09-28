@@ -11,12 +11,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,10 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
