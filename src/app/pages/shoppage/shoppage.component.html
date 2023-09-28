@@ -1,0 +1,18 @@
+<div class="container">
+    <mat-card *ngFor="let pet of pet" class="mt20">
+        <div class="container mt20" style="display: flex;">
+            <div>
+                <h3>{{ pet.name }}</h3>
+                <h4>{{ pet.price | currency }}</h4>
+                <p>{{ pet.description }}</p>
+            </div>
+            <div class="container button-margin">
+                <button  >
+                    Add to cart
+                </button>
+            </div>
+
+        </div>
+
+    </mat-card>
+</div>
