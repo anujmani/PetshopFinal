@@ -9,10 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ShoppageComponent implements OnInit {
   pet = [...pets];
+  
   constructor(private route: ActivatedRoute){}
   ngOnInit(): void {
+    console.log(this.pet)
     throw new Error('Method not implemented.');
-  }
 
+  }
+  onAdd(pet: any){
+    console.log(pet)
+
+  }
 
 }
