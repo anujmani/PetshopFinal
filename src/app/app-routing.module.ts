@@ -4,6 +4,7 @@ import { SignupComponent } from './pages/sign-uppage/signup/signup.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ShoppageComponent } from './pages/shoppage/shoppage.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 const routes: Routes = [
   {
@@ -19,13 +20,18 @@ const routes: Routes = [
   {
     path:'shop',
     component: ShoppageComponent,
-    pathMatch:'full'
+    pathMatch:"full",
   },
   {
     path:'cart',
     component: CartComponent,
     pathMatch:'full'
-  }
+  },
+  {
+    path:'details/:petId',
+    component: DetailsComponent,
+ 
+  },
 ];
 
 @NgModule({

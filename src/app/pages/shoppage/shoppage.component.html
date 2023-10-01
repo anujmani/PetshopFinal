@@ -1,10 +1,12 @@
 <div class="container">
     <mat-card *ngFor="let pet of pet" class="mt20">
         <div class="container mt20" style="display: flex;">
-            <div>
-                <h3>{{ pet.name }}</h3>
+                <div>
+                <h3 >{{ pet.name }}</h3>
                 <h4>{{ pet.price | currency }}</h4>
                 <p>{{ pet.description }}</p>
+                
+                <button [routerLink]="['/details',pet.id]">Details</button>
             </div>
             <div class="container button-margin">
                 <button (click)="onAdd(pet)">

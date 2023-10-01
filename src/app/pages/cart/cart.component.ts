@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { CartserviceService } from 'src/app/cartservice.service';
+import { BuypageComponent } from '../buypage/buypage.component';
 
 @Component({
   selector: 'app-cart',
@@ -8,7 +10,9 @@ import { CartserviceService } from 'src/app/cartservice.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit{
-  constructor(private route: ActivatedRoute, private cart:CartserviceService){
+
+  constructor(private route: ActivatedRoute, private cart:CartserviceService,
+     private dialog:MatDialog){
 
   }
   check=true;
@@ -19,8 +23,14 @@ export class CartComponent implements OnInit{
       console.log(this.items)
 
   }
-  checkicon(){
-    
-  }
+  onclick() {
+    this.dialog.open(BuypageComponent,{
+      width: '550px',
+    }
+    )
+    }
+  
 
 }
+
+

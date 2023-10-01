@@ -18,6 +18,9 @@ import { ShoppageComponent } from './pages/shoppage/shoppage.component';
 import { CartComponent } from './pages/cart/cart.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import { DetailsComponent } from './pages/details/details.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BuypageComponent } from './pages/buypage/buypage.component';
 
 
 
@@ -28,7 +31,9 @@ import {MatListModule} from '@angular/material/list';
     NavbarComponent,
     HomePageComponent,
     ShoppageComponent,
-    CartComponent
+    CartComponent,
+    DetailsComponent,
+    BuypageComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +49,7 @@ import {MatListModule} from '@angular/material/list';
     MatInputModule,
     MatDividerModule,
     MatListModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
