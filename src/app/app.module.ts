@@ -16,6 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { ShoppageComponent } from './pages/shoppage/shoppage.component';
 import { CartComponent } from './pages/cart/cart.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+
 
 
 @NgModule({
@@ -39,6 +42,8 @@ import { CartComponent } from './pages/cart/cart.component';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
