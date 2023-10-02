@@ -21,6 +21,8 @@ import {MatListModule} from '@angular/material/list';
 import { DetailsComponent } from './pages/details/details.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { BuypageComponent } from './pages/buypage/buypage.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 
 
@@ -50,6 +52,7 @@ import { BuypageComponent } from './pages/buypage/buypage.component';
     MatDividerModule,
     MatListModule,
     MatDialogModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
