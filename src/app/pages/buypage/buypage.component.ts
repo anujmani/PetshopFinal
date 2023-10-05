@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { CartserviceService } from 'src/app/cartservice.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-buypage',
@@ -24,8 +25,7 @@ export class BuypageComponent implements OnInit{
     this.cart.clearCart();
     this.buyform.reset();
     this.closebuy.close();
-    alert("Your order has been submitted")
-
+    Swal.fire("Success !!", "Your order has been sent", "success");
   }
 
 }

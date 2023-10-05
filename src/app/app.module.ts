@@ -37,7 +37,8 @@ import { LoginpageComponent } from './pages/loginPage/loginpage/loginpage.compon
     CartComponent,
     DetailsComponent,
     BuypageComponent,
-    LoginpageComponent
+    LoginpageComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -55,6 +56,7 @@ import { LoginpageComponent } from './pages/loginPage/loginpage/loginpage.compon
     MatListModule,
     MatDialogModule,
     CarouselModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
