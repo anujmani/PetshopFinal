@@ -23,7 +23,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { BuypageComponent } from './pages/buypage/buypage.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LoginpageComponent } from './pages/loginPage/loginpage/loginpage.component';
-
+import { MatTableModule } from '@angular/material/table';
 
 
 
@@ -56,6 +56,7 @@ import { LoginpageComponent } from './pages/loginPage/loginpage/loginpage.compon
     MatListModule,
     MatDialogModule,
     CarouselModule,
+    MatTableModule
   
   ],
   providers: [],

@@ -11,7 +11,7 @@
             <mat-divider></mat-divider>
 
         </div>
-        <div class="container text-center mt20 " *ngIf="items.length!=0;else emptyItemsBlock" >
+        <div class="container text-center mt20 mb20" *ngIf="items.length!=0;else emptyItemsBlock" >
             <button mat-flat-button color="primary" (click)="onclick()" >Buy</button>
         </div>
         <ng-template #emptyItemsBlock>

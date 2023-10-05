@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Pets , pets} from '../../pets'
 import { ActivatedRoute } from '@angular/router';
 import { CartserviceService } from 'src/app/cartservice.service';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-shoppage',
@@ -10,6 +11,7 @@ import { CartserviceService } from 'src/app/cartservice.service';
 })
 export class ShoppageComponent implements OnInit {
   pet = [...pets];
+
   
   constructor(private route: ActivatedRoute, private cart: CartserviceService){}
   ngOnInit(): void {
@@ -23,5 +25,6 @@ export class ShoppageComponent implements OnInit {
     alert(pet.name +" is added to the cart")
 
   }
-
+  
+  
 }
